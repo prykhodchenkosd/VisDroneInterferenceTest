@@ -1,0 +1,8 @@
+names:
+  0: person
+  1: car
+  2: truck
+  3: bus
+path: dataset
+train: images/train
+val: images/val_degraded_dataset/combined
