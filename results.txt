@@ -1,0 +1,81 @@
+C:\Users\Serg\PycharmProjects\ManinProj2b\.venv\Scripts\python.exe C:\Users\Serg\PycharmProjects\ManinProj2b\evaluate.py 
+True
+NVIDIA GeForce RTX 3080
+Testing: clean
+{'path': 'dataset', 'train': 'images/train', 'val': 'images/val', 'names': {0: 'person', 1: 'car', 2: 'truck', 3: 'bus'}}
+Ultralytics 8.4.52  Python-3.14.5 torch-2.12.0+cu132 CUDA:0 (NVIDIA GeForce RTX 3080, 12288MiB)
+Model summary (fused): 73 layers, 3,006,428 parameters, 0 gradients, 8.1 GFLOPs
+val: Fast image access  (ping: 0.00.0 ms, read: 1528.0388.5 MB/s, size: 123.8 KB)
+val: Scanning C:\Users\Serg\PycharmProjects\ManinProj2b\dataset\labels\val.cache... 548 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 548/548 109.5Mit/s 0.0s
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 35/35 7.8it/s 4.5s
+                   all        548      29034      0.589      0.417      0.437      0.251
+                person        531      13969      0.544      0.363      0.371      0.133
+                   car        515      14064       0.68      0.674      0.691      0.441
+                 truck        266        750      0.561      0.221       0.26      0.166
+                   bus        131        251      0.573       0.41      0.429      0.266
+Speed: 0.5ms preprocess, 1.9ms inference, 0.0ms loss, 1.8ms postprocess per image
+Results saved to C:\Users\Serg\PycharmProjects\ManinProj2b\runs\detect\val-23
+Testing: smoke
+{'path': 'dataset', 'train': 'images/train', 'val': 'images/val_degraded_dataset/smoke', 'names': {0: 'person', 1: 'car', 2: 'truck', 3: 'bus'}}
+Ultralytics 8.4.52  Python-3.14.5 torch-2.12.0+cu132 CUDA:0 (NVIDIA GeForce RTX 3080, 12288MiB)
+val: Fast image access  (ping: 0.00.0 ms, read: 2364.5354.7 MB/s, size: 232.2 KB)
+val: Scanning C:\Users\Serg\PycharmProjects\ManinProj2b\dataset\labels\val_degraded_dataset\smoke... 548 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 548/548 2.8Kit/s 0.2s
+val: New cache created: C:\Users\Serg\PycharmProjects\ManinProj2b\dataset\labels\val_degraded_dataset\smoke.cache
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 35/35 7.4it/s 4.7s
+                   all        548      29034      0.587      0.386      0.408      0.237
+                person        531      13969      0.569      0.309      0.332      0.115
+                   car        515      14064      0.674      0.675      0.684      0.436
+                 truck        266        750      0.486      0.197       0.22      0.136
+                   bus        131        251      0.617      0.363      0.395       0.26
+Speed: 0.6ms preprocess, 1.6ms inference, 0.0ms loss, 2.1ms postprocess per image
+Results saved to C:\Users\Serg\PycharmProjects\ManinProj2b\runs\detect\val-24
+Testing: dust
+{'path': 'dataset', 'train': 'images/train', 'val': 'images/val_degraded_dataset/dust', 'names': {0: 'person', 1: 'car', 2: 'truck', 3: 'bus'}}
+Ultralytics 8.4.52  Python-3.14.5 torch-2.12.0+cu132 CUDA:0 (NVIDIA GeForce RTX 3080, 12288MiB)
+val: Fast image access  (ping: 0.10.0 ms, read: 1421.6198.8 MB/s, size: 309.0 KB)
+val: Scanning C:\Users\Serg\PycharmProjects\ManinProj2b\dataset\labels\val_degraded_dataset\dust... 548 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 548/548 2.7Kit/s 0.2s
+val: New cache created: C:\Users\Serg\PycharmProjects\ManinProj2b\dataset\labels\val_degraded_dataset\dust.cache
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 35/35 7.2it/s 4.9s
+                   all        548      29034      0.562      0.389      0.405      0.227
+                person        531      13969      0.573       0.29      0.315      0.107
+                   car        515      14064      0.698      0.651       0.68      0.423
+                 truck        266        750       0.42      0.241      0.227      0.141
+                   bus        131        251      0.556      0.375        0.4      0.238
+Speed: 0.6ms preprocess, 2.0ms inference, 0.0ms loss, 1.7ms postprocess per image
+Results saved to C:\Users\Serg\PycharmProjects\ManinProj2b\runs\detect\val-25
+Testing: blur
+{'path': 'dataset', 'train': 'images/train', 'val': 'images/val_degraded_dataset/blur', 'names': {0: 'person', 1: 'car', 2: 'truck', 3: 'bus'}}
+Ultralytics 8.4.52  Python-3.14.5 torch-2.12.0+cu132 CUDA:0 (NVIDIA GeForce RTX 3080, 12288MiB)
+val: Fast image access  (ping: 0.00.0 ms, read: 2198.4613.9 MB/s, size: 228.3 KB)
+val: Scanning C:\Users\Serg\PycharmProjects\ManinProj2b\dataset\labels\val_degraded_dataset\blur... 548 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 548/548 2.8Kit/s 0.2s
+val: New cache created: C:\Users\Serg\PycharmProjects\ManinProj2b\dataset\labels\val_degraded_dataset\blur.cache
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 35/35 8.4it/s 4.1s
+                   all        548      29034      0.547      0.199       0.22      0.115
+                person        531      13969      0.766     0.0236     0.0651     0.0193
+                   car        515      14064      0.652      0.416      0.462      0.235
+                 truck        266        750      0.379     0.0707     0.0767     0.0447
+                   bus        131        251      0.388      0.287      0.276      0.159
+Speed: 0.6ms preprocess, 1.4ms inference, 0.0ms loss, 1.4ms postprocess per image
+Results saved to C:\Users\Serg\PycharmProjects\ManinProj2b\runs\detect\val-26
+Testing: combined
+{'path': 'dataset', 'train': 'images/train', 'val': 'images/val_degraded_dataset/combined', 'names': {0: 'person', 1: 'car', 2: 'truck', 3: 'bus'}}
+Ultralytics 8.4.52  Python-3.14.5 torch-2.12.0+cu132 CUDA:0 (NVIDIA GeForce RTX 3080, 12288MiB)
+val: Fast image access  (ping: 0.00.0 ms, read: 1970.9405.9 MB/s, size: 192.1 KB)
+val: Scanning C:\Users\Serg\PycharmProjects\ManinProj2b\dataset\labels\val_degraded_dataset\combined... 548 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 548/548 2.7Kit/s 0.2s
+val: New cache created: C:\Users\Serg\PycharmProjects\ManinProj2b\dataset\labels\val_degraded_dataset\combined.cache
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 35/35 8.1it/s 4.3s
+                   all        548      29034      0.476      0.177      0.166     0.0834
+                person        531      13969      0.752    0.00477     0.0284    0.00895
+                   car        515      14064      0.525      0.437      0.411      0.197
+                 truck        266        750      0.359     0.0667     0.0598     0.0319
+                   bus        131        251      0.268      0.198      0.166     0.0956
+Speed: 0.6ms preprocess, 1.4ms inference, 0.0ms loss, 1.7ms postprocess per image
+Results saved to C:\Users\Serg\PycharmProjects\ManinProj2b\runs\detect\val-27
+             mAP50  Precision    Recall
+clean     0.437345   0.589496  0.417301
+smoke     0.407624   0.586549  0.386192
+dust      0.405353   0.561625  0.389338
+blur      0.219997   0.546544  0.199186
+combined  0.166153   0.475798  0.176596
+
+Process finished with exit code 0
